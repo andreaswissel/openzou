@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head lang="de">
+  <meta charset="UTF-8">
+  <title>TEMS</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <link href="css/app.critical.css" rel="stylesheet" />
+  <noscript>
+    <link href="css/app.min.css" rel="stylesheet" />
+  </noscript>
+</head>
+<body>
+  <main>
+    <section id="head">
+      <nav>
+        <h1 id="brand">
+          <a href="index.html">Proventa</a>
+        </h1>
+        <button class="menu trigger" onclick="toggleNavigation(this)">
+          <span class="">Menu</span>
+        </button>
+        <ul id="main-navigation">
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Aktuelles</a>
+            <nav class="subnavigation">
+              <ul>
+                <li>
+                  <a href="#">Eins</a>
+                </li>
+                <li>
+                  <a href="#">Zwei</a>
+                </li>
+                <li>
+                  <a href="#">Drei</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Dokumente</a>
+          </li>
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Urlaub</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="toggleClass(this, 'active')">Zeiterfassung</a>
+            <nav class="subnavigation">
+              <ul>
+                <li>
+                  <a href="#">Eins</a>
+                </li>
+                <li>
+                  <a href="#">Zwei</a>
+                </li>
+                <li>
+                  <a href="#">Drei</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+        <section class="settings">
+          <a href="#" class="app-settings">
+            <i class="settings-icon"></i>
+            Einstellungen
+          </a>
+          <a href="#" class="user">
+            <img src="img/user.png" alt="Mein Profil" />
+          </a>
+        </section>
+      </nav>
+      <section id="hero" class="start">
+        <header class="container">
+          <h1>
+            Hallo Andreas.
+          </h1>
+          <h2>
+            Du hast diesen Monat bisher <strong>109</strong> Stunden gebucht.
+          </h2>
+          <button>Buchen</button>
+          <button>Timesheet</button>
+        </header>
+      </section>
+    </section>
+    <section id="content" class="container">
+      <header>
+        <h1>
+          Aktuelle Projekte
+        </h1>
+      </header>
+      <section class="card-container">
+        <section class="scroll">
+          <section class="card">
+            <header>
+              <h1>
+                ProMOS Bio
+              </h1>
+              <h2>
+                89 Stunden
+              </h2>
+              <button>Buchen</button>
+              <button>Timesheet</button>
+            </header>
+            <div class="card-options">
+              <a href="#" class="table-icon">
+                Table
+              </a>
+              <a href="#" class="print-icon">
+                Print
+              </a>
+              <a href="#" class="forward-icon">
+                Forward
+              </a>
+            </div>
+          </section>
+          <section class="card">
+            <header>
+              <h1>
+                ProMOS Bio
+              </h1>
+              <h2>
+                89 Stunden
+              </h2>
+              <button>Buchen</button>
+              <button>Timesheet</button>
+            </header>
+            <div class="card-options">
+              <a href="#" class="table-icon">
+                Table
+              </a>
+              <a href="#" class="print-icon">
+                Print
+              </a>
+              <a href="#" class="forward-icon">
+                Forward
+              </a>
+            </div>
+          </section>
+          <section class="card">
+            <header>
+              <h1>
+                ProMOS Bio
+              </h1>
+              <h2>
+                89 Stunden
+              </h2>
+              <button>Buchen</button>
+              <button>Timesheet</button>
+            </header>
+            <div class="card-options">
+              <a href="#" class="table-icon">
+                Table
+              </a>
+              <a href="#" class="print-icon">
+                Print
+              </a>
+              <a href="#" class="forward-icon">
+                Forward
+              </a>
+            </div>
+          </section>
+          <section class="card">
+            <header>
+              <h1>
+                ProMOS Bio
+              </h1>
+              <h2>
+                89 Stunden
+              </h2>
+              <button>Buchen</button>
+              <button>Timesheet</button>
+            </header>
+            <div class="card-options">
+              <a href="#" class="table-icon">
+                Table
+              </a>
+              <a href="#" class="print-icon">
+                Print
+              </a>
+              <a href="#" class="forward-icon">
+                Forward
+              </a>
+            </div>
+          </section>
+          <section class="card">
+            <header>
+              <h1>
+                ProMOS Bio
+              </h1>
+              <h2>
+                89 Stunden
+              </h2>
+              <button>Buchen</button>
+              <button>Timesheet</button>
+            </header>
+            <div class="card-options">
+              <a href="#" class="table-icon">
+                Table
+              </a>
+              <a href="#" class="print-icon">
+                Print
+              </a>
+              <a href="#" class="forward-icon">
+                Forward
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="form container">
+        <header>
+          <h1>
+            Formulare
+          </h1>
+        </header>
+        <div class="form-wrapper">
+          <form>
+            <fieldset>
+              <div class="form-element">
+                <label for="select">
+                  Benutzer
+                </label>
+                <select name="select">
+                  <option>
+                    Option 1
+                  </option>
+                  <option>
+                    Option 2
+                  </option>
+                </select>
+              </div>
+              <div class="form-element error">
+                <label for="select">
+                  Benutzer
+                </label>
+                <select name="select">
+                  <option>
+                    Option 1
+                  </option>
+                  <option>
+                    Option 2
+                  </option>
+                </select>
+              </div>
+              <div class="form-element success">
+                <label for="select">
+                  Benutzer
+                </label>
+                <select name="select">
+                  <option>
+                    Option 1
+                  </option>
+                  <option>
+                    Option 2
+                  </option>
+                </select>
+              </div>
+              <div class="form-element">
+                <label for="select">
+                  Benutzer
+                </label>
+                <input type="text" />
+              </div>
+              <div class="form-element error">
+                <label for="select">
+                  Benutzer
+                </label>
+                <input type="text" />
+              </div>
+              <div class="form-element success">
+                <label for="">
+                  Benutzer
+                </label>
+                <input type="text" />
+              </div>
+              <div class="form-element">
+                <label for="select">
+                  Benutzer
+                </label>
+                <input type="text" class="calendar" />
+              </div>
+              <div class="form-element error">
+                <label for="select">
+                  Benutzer
+                </label>
+                <input type="text" class="calendar" />
+              </div>
+              <div class="form-element success">
+                <label for="">
+                  Benutzer
+                </label>
+                <input type="text" class="calendar" />
+              </div>
+              <button type="reset">Abbrechen</button>
+              <button type="submit">Speichern</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section class="table container">
+        <header>
+          <h1>
+            Tabellen
+          </h1>
+        </header>
+        <div class="table-wrapper">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th width="10%">
+                  Benutzer
+                </th>
+                <th width="10%">
+                  Datum
+                </th>
+                <th width="10%">
+                  Projekt
+                </th>
+                <th width="10%">
+                  Aufgabe
+                </th>
+                <th width="10%">
+                  Beschreibung
+                </th>
+                <th width="10%">
+                  Von
+                </th>
+                <th width="10%">
+                  Bis
+                </th>
+                <th width="10%">
+                  Pause
+                </th>
+                <th width="10%">
+                  Stunden
+                </th>
+                <th width="10%">
+                  Stunden
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+            <tr>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+              <td>asdf</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="js/app.min.js"></script>
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'css/app.min.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+</body>
+</html>

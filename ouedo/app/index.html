@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ouedo</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head lang="de">
+  <meta charset="UTF-8">
+  <title>TEMS</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="dist/img/favicon.png" type="image/png" />
+  <link href="dist/css/app.critical.css" rel="stylesheet" />
+  <noscript>
+    <link href="dist/css/app.min.css" rel="stylesheet" />
+  </noscript>
 
-    {{content-for 'head'}}
+  {{content-for 'head'}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/ouedo.css">
+  <link rel="stylesheet" href="assets/vendor.css">
+  <link rel="stylesheet" href="assets/ouedo.css">
 
-    {{content-for 'head-footer'}}
-  </head>
-  <body>
-    {{content-for 'body'}}
+  {{content-for 'head-footer'}}
+</head>
+<body>
+  <main>
+    <section id="head">
+      <nav>
+        <h1 id="brand">
+          <a href="index.html">Proventa</a>
+        </h1>
+        <button class="menu trigger" onclick="toggleNavigation(this)">
+          <span class="">Menu</span>
+        </button>
+        <ul id="main-navigation">
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Aktuelles</a>
+            <nav class="subnavigation">
+              <ul>
+                <li>
+                  <a href="#">Eins</a>
+                </li>
+                <li>
+                  <a href="#">Zwei</a>
+                </li>
+                <li>
+                  <a href="#">Drei</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Dokumente</a>
+          </li>
+          <li>
+            <a href="#" onclick="toggleClass(this, 'active')">Urlaub</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="toggleClass(this, 'active')">Zeiterfassung</a>
+            <nav class="subnavigation">
+              <ul>
+                <li>
+                  <a href="#">Eins</a>
+                </li>
+                <li>
+                  <a href="#">Zwei</a>
+                </li>
+                <li>
+                  <a href="#">Drei</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+        <section class="settings">
+          <a href="#" class="app-settings">
+            <i class="settings-icon"></i>
+            Einstellungen
+          </a>
+          <a href="#" class="user">
+            <img src="dist/img/user.png" alt="Mein Profil" />
+          </a>
+        </section>
+      </nav>
+      <section id="hero" class="start">
+        <header class="container">
+          <h1>
+            Hallo Andreas.
+          </h1>
+          <h2>
+            Du hast diesen Monat bisher <strong>109</strong> Stunden gebucht.
+          </h2>
+          <button>Buchen</button>
+          <button>Timesheet</button>
+        </header>
+      </section>
+    </section>
+    <section id="content" class="container">
+      {{content-for 'body'}}
+    </section>
+
+    <section id="footer">
+      {{content-for 'body-footer'}}
+    </section>
 
     <script src="assets/vendor.js"></script>
     <script src="assets/ouedo.js"></script>
-
-    {{content-for 'body-footer'}}
-  </body>
+    <script src="dist/js/app.min.js"></script>
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'dist/css/app.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+  </main>
+</body>
 </html>
